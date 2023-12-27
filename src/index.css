@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------ */
+/* -- Navigation -- */
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 25px;
+} */
+
+.header,
+.about,
+.projects,
+.experience,
+.social,
+.footer {
+  padding: 50px 25px 25px;
+}
+
+/* ------------------------------------------------------ */
+/* -- Header -- */
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.header img {
+  max-width: 300px;
+  height: auto;
+
+  margin: 20px auto;
+
+  border-radius: 50%;
+}
+
+.header__content {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.header__content h1 {
+  font-size: 48px;
+}
+
+.header__content p {
+  font-size: 32px;
+}
+
+.header__content button {
+  margin: 25px auto 0;
+}
+
+/* ------------------------------------------------------ */
+/* -- About -- */
+
+.about h2 {
+  font-size: 42px;
+  margin: 25px auto;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 130%;
+  max-width: 75ch;
+}
+
+/* ------------------------------------------------------ */
+/* -- Projects -- */
+
+.projects h2 {
+  font-size: 42px;
+  margin: 25px auto;
+}
+
+.projects p {
+  font-size: 18px;
+  line-height: 130%;
+  max-width: 50ch;
+}
+
+.projects__cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projects__card {
+  max-width: 350px;
+
+  padding: 20px;
+
+  border: 1px solid #0088BB;
+  border-radius: 8px;
+}
+
+.projects__card h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.projects__card p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.projects__card img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 10px;
+
+  border-radius: 8px;
+}
+
+.projects__card .button {
+  margin: 10px 5px 0;
+}
+
+/* ------------------------------------------------------ */
+/* -- Education/Experience -- */
+
+.experience h2 {
+  font-size: 42px;
+  margin: 25px auto;
+}
+
+.experience ul {
+  margin: 0 0 10px 50px;
+}
+
+.experience li {
+  font-size: 18px;
+  line-height: 130%;
+  margin: 15px auto;
+}
+
+/* ------------------------------------------------------ */
+/* -- Social Media -- */
+
+.social h2 {
+  font-size: 42px;
+  margin: 25px auto;
+}
+
+.social .button {
+  margin: 0 15px;
+}
+
+/* ------------------------------------------------------ */
+/* -- Footer -- */
+.footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ------------------------------------------------------ */
+/* -- HTML COMPONENTS: BUTTON -- */
+.button {
+  display: inline-block;
+
+  background: #12BDF3;
+
+  padding: 15px 50px;
+
+  border: none;
+  border-radius: 8px;
+
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: all 250ms ease;
+}
+
+.button:hover {
+  background: #0088BB;
+  color: #FFFFFF;
+}
+
+/*Skills styling*/
+
+.mongodb {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.react {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 20%;
+  float: left;
+}
+
+.node {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.tailwindcss {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.java {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.git {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.solidity {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.solana {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.rust {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.postman {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.kubernets {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+}
+
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: black;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: ;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #0088BB;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .js {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .reactjs {
+  width: 70%;
+}
+.progress-line .nodejs {
+  width: 50%;
+}
+.progress-line .tailwindcss {
+  width: 70%;
+}
+.progress-line .java {
+    width: 50%;
+}
+.progress-line .git {
+    width: 60%;
+}
+.progress-line .postman {
+    width: 80%;
+}
+.progress-line .python {
+  width: 60%;
+}
+.progress-line .java {
+  width: 70%;
+}
+.progress-line .typescript {
+  width: 60%;
+}
+.progress-line .expressjs {
+  width: 50%;
+}
+.progress-line .solidity {
+  width: 70%;
+}
+.progress-line .sql {
+  width: 70%;
+}
+.progress-line .figma {
+  width: 60%;
+}
+.progress-line .rust {
+  width: 50%;
+}
+.progress-line .kubernets {
+  width: 60%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .js::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .reactjs::after {
+  content: "70%";
+}
+.progress-line .nodejs::after {
+  content: "50%";
+}
+.progress-line .tailwindcss::after {
+  content: "70%";
+}
+.progress-line .java::after {
+    content: "50%";
+}
+.progress-line .git::after {
+    content: "60%";
+}
+.progress-line .postman::after {
+    content: "80%";
+}
+.progress-line .python::after {
+  content: "60%";
+}
+.progress-line .java::after {
+  content: "70%";
+}
+.progress-line .typescript::after {
+  content: "60%";
+}
+.progress-line .expressjs::after {
+  content: "50%";
+}
+.progress-line .solidity::after {
+  content: "70%";
+}
+.progress-line .sql::after {
+  content: "70%";
+}
+.progress-line .figma::after {
+  content: 60%;
+}
+.progress-line .rust::after {
+  content: 50%;
+}
+.progress-line .kubernets::after {
+  content: 60%;
+}
+
+.skills-heading {
+  font-size: 40px;
+}
