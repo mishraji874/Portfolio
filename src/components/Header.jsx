@@ -13,7 +13,7 @@ const Header = () => (
                 <li><a href="#skills" className="hover:text-gray-400">Skills</a></li>
                 <li><a href="#certifications" className="hover:text-gray-400">Certifications</a></li>
                 <li><a href="#contact" className="hover:text-gray-400">Contact Me</a></li>
-                <li><Link to="https://drive.google.com/file/d/1jPrARqUCW69T7lpHwRWDR5GPwpQGsMUo/view?usp=sharing" className="hover:text-gray-400">Resume</Link></li>
+                <li><a href="https://drive.google.com/file/d/1AQ5KUzReLoWsHHcQhnwZ1uI8tF8Wr3rq/view?usp=sharing" className="hover:text-gray-400" target='_blank'>Resume</a></li>
             </ul>
         </nav>
     </header>

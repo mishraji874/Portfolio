@@ -47,7 +47,7 @@ const Projects = () => {
                                 {project.description.map((desc, idx) => (
                                     <p key={idx} className="text-white-600 mb-4">{desc}</p>
                                 ))}
-                                <a href={project.link} className="inline-block bg-blue-500 text-white px-4 py-2 rounded mt-4">See Project</a>
+                                <a href={project.link} className="inline-block bg-blue-500 text-white px-4 py-2 rounded mt-4" target='_blank'>See Project</a>
                             </div>
                         </div>
                     ))}
