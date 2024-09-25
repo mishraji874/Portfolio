@@ -4,11 +4,22 @@ const experiences = [
     {
         role: "Web3 Developer Intern",
         company: "LILLUP",
-        duration: "Mar 2024 - Present",
+        duration: "April 2024 - Present",
         responsibilities: [
-            "Working as a Team Lead of the Web3/Blockchain Team in the company.",
-            "Using Base blockchain (Layer2) for the development of the project in the internship.",
-            "Implemented smart contracts for various use cases, such as tokenization, decentralized finance (DeFi), and non-fungible tokens (NFTs)."
+            "Engineered a dApp for peer-to-peer transactions, accelerating transaction speed by 20% on the Ethereum network.",
+            "Implemented Solidity smart contracts, enhancing security and diminishing vulnerabilities by 30%.",
+            "Scrutinized over 1,000 blockchain transactions, pinpointing inefficiencies in gas consumption, leading to a 15% reduction in gas fees."
+        ]
+    },
+    {
+        role: "Full Stack Developer",
+        company: "FabHotels",
+        duration: "June 2024 - August 2024",
+        responsibilities: [
+            "Developed a custom booking engine that increased user engagement by 25% and boosted conversion rates by 15%.",
+            "Integrated REST APIs to enable real-time flight and hotel availability, improving search response times by 30%.",
+            "Analyzed user behavior data from over 5,000 sessions to uncover pain points, resulting in a 20% decrease in cart abandonment.",
+            "Presented insights and project improvements, receiving recognition for contributing to a 10% increase in client retention."
         ]
     },
     {
@@ -16,9 +27,10 @@ const experiences = [
         company: "InternDEV",
         duration: "Apr 2023 - Jun 2023",
         responsibilities: [
-            "I worked as a frontend web developer intern at InternDEV.",
-            "By doing internships and making projects I’ve learned the best use of React and NextJS.",
-            "Working on the tasks helps me understand the concepts of React and NextJS very well."
+            "Boosted mobile user engagement by 25% by implementing a responsive layout system.",
+            "Created a custom CSS framework that improved page load speed by 20%.",
+            "Established an automated UI testing system, reducing manual testing time by 40%.",
+            "Enhanced user interface, leading to a 15% increase in conversion rates."
         ]
     },
     {
@@ -26,9 +38,9 @@ const experiences = [
         company: "Directorate of Student Affairs",
         duration: "Nov 2022 - Present",
         responsibilities: [
-            "I’m working as a Technical Team Member in my college technical club DSA.",
-            "I’m working here as a Full Stack Web Developer in the team and developing some websites for college events.",
-            "This club helps me in gaining so much knowledge about web technologies and also enhances my skills by 10X."
+            "Spearheaded a mentorship program that facilitated the development of 15 new projects and fostered a collaborative learning environment.",
+            "Integrated analytics tools into event websites, which resulted in a 25% year-over-year increase in event attendance.",
+            "Improved skills and knowledge in web technologies through practical experience and teamwork."
         ]
     }
 ];

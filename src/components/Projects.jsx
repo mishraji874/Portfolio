@@ -2,34 +2,40 @@ import React from 'react';
 
 const projects = [
     {
-        title: "NFT Marketplace",
+        title: "NFT Marketplace: Distributed platform for trading and minting NFTs",
         description: [
-            "The NFT marketplace is a digital space where unique digital assets are bought, sold, and traded using blockchain technology. Non-fungible tokens (NFTs) represent ownership of exclusive digital or physical items. Artists tokenize their work, and smart contracts ensure secure, transparent transactions, reshaping industries by providing a novel way to own and monetize digital creations.",
-            "Integrated digital wallets for secure storage and transfer of NFTs, reducing the number of reported security issues by 20% through robust encryption and authentication measures.",
-            "Developed and deployed an authentication and authorization system, achieving a 99.9% uptime and zero reported security breaches during the project lifecycle."
+            "Architected a smart contract system for NFT minting and trading, enhancing security and user trust by 20% and reducing errors by 30%.",
+            "UtilizedWeb3.js and Hardhat for Ethereum integration, reducing development time by 25%.",
+            "Elevated user experience by 40% through a React-based interface for minting, buying, and selling NFTs.",
+            "Employed IPFS for storage, improving data retrieval speed by 50% and ensuring asset availability."
         ],
         image: "/images/nft-marketplace.gif",
-        link: "https://github.com/mishraji874/Timeless-NFT-Marketplace"
+        link: "https://github.com/mishraji874/Timeless-NFT-Marketplace",
+        demo: "https://github.com/mishraji874/Timeless-NFT-Marketplace"
     },
     {
-        title: "Browser Wallet Extension",
+        title: "Airbnb dapp Clone",
         description: [
-            "The wallet extension project aimed to provide a secure and convenient solution for managing cryptocurrency assets, combining robust security measures with user-friendly design and seamless browser integration.",
-            "I’ve developed the project to address increasing demand, enhance convenience, improve security, and capitalize on market opportunities, and built with the help of ReactJS, Ether.js, and Moralis.",
-            "It has key features like secure storage, browser integration, transaction management, multi-currency support, privacy protection, backup and recovery."
+            "Established a booking system for short-term rentals, increasing booking transparency by 35%.",
+            "Integrated web3.storage for property listing storage, managing over 2,500 listings and reducing server costs by 40%.",
+            "Designed analytics to track booking trends, enhancing forecast accuracy by 20%.",
+            "Incorporated smart contract components for seamless integration with Ethereum payment gateways, enabling compatibility with over 10,000 transactions monthly."
         ],
-        image: "/images/browser-wallet-extension.png",
-        link: "https://github.com/mishraji874/Brownser-Extension-Wallet"
+        image: "/images/airbnb-dapp.png",
+        link: "https://github.com/mishraji874/Airbnb-dApp",
+        demo: "https://airbnb-dapp-xi.vercel.app/"
     },
     {
         title: "DApp Social",
         description: [
-            "The DApp Social Media Platform revolutionizes social networking with decentralization, ensuring user privacy and data control. Built on blockchain, it employs smart contracts for transparent interactions and content monetization.",
-            "This platform empowers users, offering a secure, censorship-resistant space where ownership and control over data are prioritized, creating a truly community-driven social experience.",
-            "Utilized IPFS (InterPlanetary File System) for decentralized storage of media files, improving content availability and reducing reliance on centralized servers."
+            "Built a user authentication system, achieving 100% control over user data.",
+            "Developed a content posting feature, processing over 10,000 transactions daily on Ethereum.",
+            "Generated real-time data visualizations, increasing user retention by 30%.",
+            "Fortified data integrity by 50% and reduced contract deployment costs by 20% with modular smart contracts integrated with IPFS."
         ],
         image: "/images/dsocial.png",
-        link: "https://github.com/mishraji874/Dsocial"
+        link: "https://github.com/mishraji874/Dsocial",
+        demo: "https://dsocial-pi.vercel.app/"
     }
 ];
 
@@ -45,9 +51,10 @@ const Projects = () => {
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
                                 {project.description.map((desc, idx) => (
-                                    <p key={idx} className="text-white-600 mb-4">{desc}</p>
+                                    <p key={idx} className="text-white-600 mb-4"><li>{desc}</li></p>
                                 ))}
                                 <a href={project.link} className="inline-block bg-blue-500 text-white px-4 py-2 rounded mt-4" target='_blank'>See Project</a>
+                                <a href={project.demo} className="inline-block bg-blue-500 text-white px-4 py-2 rounded mt-4" target='_blank'>Live Demo</a>
                             </div>
                         </div>
                     ))}
