@@ -14,7 +14,7 @@ const projects = [
         demo: "https://github.com/mishraji874/Timeless-NFT-Marketplace"
     },
     {
-        title: "Airbnb dapp Clone",
+        title: "Airbnb dapp Clone: Decentralized Home Sharing",
         description: [
             "Established a booking system for short-term rentals, increasing booking transparency by 35%.",
             "Integrated web3.storage for property listing storage, managing over 2,500 listings and reducing server costs by 40%.",
@@ -26,7 +26,7 @@ const projects = [
         demo: "https://airbnb-dapp-xi.vercel.app/"
     },
     {
-        title: "DApp Social",
+        title: "DSocial: Decentralized Social Media Application",
         description: [
             "Built a user authentication system, achieving 100% control over user data.",
             "Developed a content posting feature, processing over 10,000 transactions daily on Ethereum.",
@@ -36,6 +36,42 @@ const projects = [
         image: "/images/dsocial.png",
         link: "https://github.com/mishraji874/Dsocial",
         demo: "https://dsocial-pi.vercel.app/"
+    },
+    {
+        title: "zkTune: Decentralized Music Streaming Platform",
+        description: [
+            "Artists upload and monetize music, keeping ownership through blockchain.",
+            "Ensures user privacy using zero-knowledge proofs, protecting data during streaming.",
+            "Stores music securely on IPFS and blockchain, making it tamper-proof and always accessible.",
+            "Smart contracts enable direct, fee-free payments to artists for streams."
+        ],
+        image: "/images/zktune.png",
+        link: "https://github.com/mishraji874/zkTune-Decentralized-Music-Streaming-Platform",
+        demo: "https://zktune.vercel.app/"
+    },
+    {
+        title: "BuyMeACoffee-dApp: Support Creators Seamlessly",
+        description: [
+            "Enables users to send small donations to creators, allowing for direct support with minimal fees.",
+            "Transactions are recorded on the Sepolia testnet, ensuring transparency and traceability for all contributions.",
+            "Smart contracts automate and secure payments, providing immediate transfers to the creator's wallet.",
+            "Features a simple and intuitive UI, making it easy for users to support creators with just a few clicks."
+        ],
+        image: "/images/buymeacoffee.png",
+        link: "https://github.com/mishraji874/BuyMeACoffee-dApp",
+        demo: "https://buymeacoffee-dapp-seven.vercel.app/"
+    },
+    {
+        title: "B2B Travel Company Website: Efficient Travel Solutions for Businesses",
+        description: [
+            "Provides a user-friendly interface for quick, efficient bookings across multiple travel services, tailored for business needs.",
+            "Allows companies to manage complex travel itineraries and schedules in one centralized platform.",
+            "Integrates with major travel providers, offering a broad range of options and ensuring real-time availability and pricing.",
+            "Implements robust security measures for safe transactions, protecting sensitive business data throughout the booking process."
+        ],
+        image: "/images/b2b.png",
+        link: "https://github.com/mishraji874/B2B-Travel-Compnay",
+        demo: "https://b2b-travel-company.vercel.app/"
     }
 ];
 
