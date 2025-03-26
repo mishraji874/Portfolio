@@ -1,22 +1,57 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useTheme } from '../context/ThemeContext';
 
-const Header = () => (
-    <header className="bg-gray-800 text-white py-4">
-        <nav className="container mx-auto flex justify-between items-center bg-transparent backdrop-blur-none">
-            <h1 className="text-2xl font-bold"><Link to="/">Aditya Mishra</Link></h1>
-            <ul className="flex space-x-4">
-                <li><a href="#home" className="hover:text-gray-400">Home</a></li>
-                <li><a href="#about" className="hover:text-gray-400">About Me</a></li>
-                <li><a href="#experience" className="hover:text-gray-400">Experience</a></li>
-                <li><a href="#projects" className="hover:text-gray-400">Projects</a></li>
-                <li><a href="#skills" className="hover:text-gray-400">Skills</a></li>
-                <li><a href="#certifications" className="hover:text-gray-400">Certifications</a></li>
-                <li><a href="#contact" className="hover:text-gray-400">Contact Me</a></li>
-                <li><a href="https://drive.google.com/file/d/1AQ5KUzReLoWsHHcQhnwZ1uI8tF8Wr3rq/view?usp=sharing" className="hover:text-gray-400" target='_blank'>Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-);
+export const Header = () => {
+    const { theme, toggleTheme } = useTheme();
 
-export default Header;
+    return (
+        <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 shadow-md">
+            <nav className="container mx-auto px-4 py-4">
+                <div className="flex items-center justify-between">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="text-2xl font-bold"
+                        style={{ color: theme.colors.text }}
+                    >
+                        Portfolio
+                    </motion.div>
+                    <div className="flex items-center space-x-6">
+                        <a
+                            href="#about"
+                            className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                        >
+                            About
+                        </a>
+                        <a
+                            href="#skills"
+                            className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                        >
+                            Skills
+                        </a>
+                        <a
+                            href="#projects"
+                            className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                        >
+                            Projects
+                        </a>
+                        <a
+                            href="#contact"
+                            className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                        >
+                            Contact
+                        </a>
+                        <button
+                            onClick={toggleTheme}
+                            className="p-2 rounded-full bg-gray-200 dark:bg-gray-700"
+                        >
+                            {theme.isDark ? '🌞' : '🌙'}
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    );
+};

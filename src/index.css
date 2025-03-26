@@ -2,6 +2,193 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-gray-900 text-white;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-gray-900;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-gray-700 rounded-full;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-gray-600;
+    }
+}
+
+@layer components {
+    .canvas-container {
+        @apply relative w-full h-full;
+    }
+
+    .canvas-container canvas {
+        @apply !touch-none;
+    }
+
+    .section-container {
+        @apply container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+    }
+
+    .section-content {
+        @apply relative z-10 container mx-auto px-4;
+    }
+
+    .gradient-text {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500;
+    }
+
+    .glass-effect {
+        @apply bg-white bg-opacity-10 backdrop-blur-lg;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+/* 3D Text Effect */
+.text-3d {
+    text-shadow:
+        0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Loading Animation */
+.loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+}
+
+/* Hover Effects */
+.hover-scale {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-lift {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Text Sizes */
+@media (max-width: 640px) {
+    .text-4xl {
+        font-size: 2rem;
+    }
+
+    .text-5xl {
+        font-size: 2.5rem;
+    }
+
+    .text-6xl {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .text-4xl {
+        font-size: 2.25rem;
+    }
+
+    .text-5xl {
+        font-size: 3rem;
+    }
+
+    .text-6xl {
+        font-size: 3.75rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .text-4xl {
+        font-size: 2.5rem;
+    }
+
+    .text-5xl {
+        font-size: 3.5rem;
+    }
+
+    .text-6xl {
+        font-size: 4.5rem;
+    }
+}
+
 body {
     background-color: #000;
     /* Set the background color to black */

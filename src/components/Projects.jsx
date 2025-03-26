@@ -1,4 +1,7 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Float, Text3D } from '@react-three/drei';
 
 const projects = [
     {
@@ -75,26 +78,105 @@ const projects = [
     }
 ];
 
+const FloatingText = () => {
+  return (
+    <Float speed={1.5} rotationIntensity={1} floatIntensity={1}>
+      <Text3D
+        font="/fonts/helvetiker_regular.typeface.json"
+        size={0.5}
+        height={0.2}
+        curveSegments={12}
+      >
+        Projects
+        <meshStandardMaterial color="#3b82f6" wireframe />
+      </Text3D>
+    </Float>
+  );
+};
+
 const Projects = () => {
     return (
-        <section id="projects" className="py-20 bg-black text-white-800">
-            <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-8 text-center">Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="projects" className="py-20 bg-black text-white-800 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gray-900 opacity-90"></div>
+            <div className="absolute right-0 top-0 w-1/2 h-full">
+                <Canvas camera={{ position: [0, 0, 5] }}>
+                    <ambientLight intensity={0.5} />
+                    <pointLight position={[10, 10, 10]} />
+                    <FloatingText />
+                    <OrbitControls enableZoom={false} />
+                </Canvas>
+            </div>
+            <div className="container mx-auto px-4 relative z-10">
+                <motion.h2 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                    className="text-4xl font-bold mb-8 text-center"
+                >
+                    Projects
+                </motion.h2>
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
                     {projects.map((project, index) => (
-                        <div key={index} className="border rounded-lg shadow-lg overflow-hidden">
-                            <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            viewport={{ once: true }}
+                            whileHover={{ scale: 1.05 }}
+                            className="border border-gray-700 rounded-lg shadow-lg overflow-hidden bg-gray-800/50 backdrop-blur-sm hover:border-blue-500 transition-colors"
+                        >
+                            <motion.div
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                            </motion.div>
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
                                 {project.description.map((desc, idx) => (
-                                    <p key={idx} className="text-white-600 mb-4"><li>{desc}</li></p>
+                                    <motion.p 
+                                        key={idx}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ delay: idx * 0.1 }}
+                                        viewport={{ once: true }}
+                                        className="text-white-600 mb-4"
+                                    >
+                                        <li>{desc}</li>
+                                    </motion.p>
                                 ))}
-                                <a href={project.link} className="inline-block bg-blue-500 text-white px-4 py-2 rounded mt-4" target='_blank'>See Project</a>
-                                <a href={project.demo} className="inline-block bg-blue-500 text-white px-4 py-2 rounded mt-4" target='_blank'>Live Demo</a>
+                                <div className="flex space-x-4 mt-4">
+                                    <motion.a
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        href={project.link}
+                                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors"
+                                        target='_blank'
+                                    >
+                                        See Project
+                                    </motion.a>
+                                    <motion.a
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        href={project.demo}
+                                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors"
+                                        target='_blank'
+                                    >
+                                        Live Demo
+                                    </motion.a>
+                                </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );
