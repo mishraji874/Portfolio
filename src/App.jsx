@@ -11,6 +11,7 @@ import { Certifications } from './components/sections/Certifications';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/sections/Footer';
 import { Achievements } from './components/sections/Achievements';
+import { Blog } from './components/sections/Blog';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
               <About />
               <Experience />
               <Projects />
+              <Blog />
               <Skills />
               <Certifications />
               <Achievements />

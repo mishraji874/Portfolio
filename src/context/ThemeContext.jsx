@@ -40,7 +40,7 @@ export const ThemeProvider = ({ children }) => {
                 text: isDark ? '#e2e8f0' : '#1f2937',
                 textSecondary: isDark ? '#94a3b8' : '#4b5563',
                 border: isDark ? '#1e293b' : '#e5e7eb',
-                primary: '#64ffda',
+                primary: '##3b82f6',
                 accent: {
                     DEFAULT: '#64ffda',
                     light: '#88ffea',
