@@ -7,6 +7,12 @@ import { Button } from '../common/Button';
 
 const sampleBlogs = [
     {
+        title: "Understanding getProgramAccounts RPC Method using TypeScript",
+        excerpt: "Learn how to use the getProgramAccounts RPC method using TypeScript to query accounts owned by a program on Solana.",
+        link: "https://blog-aditya.vercel.app/blog/understanding-getprogramaccounts-rpc-method-using-typescript",
+        image: "https://miro.medium.com/v2/resize:fit:1358/1*YOIQtfgKs4J4u6tvgYwLTQ.jpeg"
+    },
+    {
         title: "Safeguarding Solidity's ecrecover Against Signature Malleability",
         excerpt: "Learn how to secure Ethereum's ecrecover function against signature malleability attacks using OpenZeppelin's ECDSA library.",
         link: "https://blog-aditya.vercel.app/blog/safeguarding-soliditys-ecrecover-against-signature-malleability",
@@ -35,12 +41,6 @@ const sampleBlogs = [
         excerpt: "Learn how private key sharding works.",
         link: "https://blog-aditya.vercel.app/blog/guide-to-sharding-private-keys-for-enhanced-security",
         image: "https://cdn-ilaimmf.nitrocdn.com/HwuKmSkzAdeInVFRkpeYovWxaTlnjAGn/assets/images/optimized/rev-b8ffd1e/www.liminalcustody.com/wp-content/uploads/2024/01/Key-Sharding-Future-of-Crypto-Security-1536x971.webp"
-    },
-    {
-        title: "Difference between Popular NFT Standards: ERC-721, ERC-721A, and ERC-1155",
-        excerpt: "Learn what is the difference between the different NFT standards.",
-        link: "https://blog-aditya.vercel.app/blog/difference-between-popular-nft-standards",
-        image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*N_cmuYlNfWgbV0sp1cKYVw.png"
     }
 ];
 
