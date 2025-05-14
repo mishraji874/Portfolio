@@ -7,6 +7,12 @@ import { Button } from '../common/Button';
 
 const sampleBlogs = [
     {
+        title: "A Deep Dive into EIP-1271",
+        excerpt: "Learn about the vulnerabilities in EIP-1271, including signature replay attacks, and how to mitigate them effectively.",
+        link: "https://blog-aditya.vercel.app/blog/a-deep-dive-into-eip-1271",
+        image: "https://celebrated-gift-f83e5c9419.media.strapiapp.com/EIP_1272_e65792851d.png"
+    },
+    {
         title: "Understanding getProgramAccounts RPC Method using TypeScript",
         excerpt: "Learn how to use the getProgramAccounts RPC method using TypeScript to query accounts owned by a program on Solana.",
         link: "https://blog-aditya.vercel.app/blog/understanding-getprogramaccounts-rpc-method-using-typescript",
@@ -35,12 +41,6 @@ const sampleBlogs = [
         excerpt: "Explore the evolution of smart contract deployment with CREATE, CREATE2, and CREATE3.",
         link: "https://blog-aditya.vercel.app/blog/understanding-create-create2-and-create3-in-solidity",
         image: "https://miro.medium.com/v2/resize:fit:1200/1*0I2grrfGZJfw1pHvi6IX8g.png"
-    },
-    {
-        title: "Guide to Sharding Private Keys for Enhanced Security",
-        excerpt: "Learn how private key sharding works.",
-        link: "https://blog-aditya.vercel.app/blog/guide-to-sharding-private-keys-for-enhanced-security",
-        image: "https://cdn-ilaimmf.nitrocdn.com/HwuKmSkzAdeInVFRkpeYovWxaTlnjAGn/assets/images/optimized/rev-b8ffd1e/www.liminalcustody.com/wp-content/uploads/2024/01/Key-Sharding-Future-of-Crypto-Security-1536x971.webp"
     }
 ];
 
