@@ -7,6 +7,12 @@ import { Button } from '../common/Button';
 
 const sampleBlogs = [
     {
+        title: "Understanding Flash Loan Attacks",
+        excerpt: "Explore how flash loans work in DeFi, their potential for exploitation in governance systems, and strategies to mitigate these attacks.",
+        link: "https://blog-aditya.vercel.app/blog/understanding-flash-loan-attacks",
+        image: "https://lh6.googleusercontent.com/ONsCHP1R5vVNvfUiGvsyRNNhzd5CjXirp4lCrQPIhx4A3lXAq54mXYE1ik0pzFyc4wunchhEZKi5SHAZ6TAx7w3irhqDkB1fp_ZMjFLIOFEX_lWjfZMllUE08wlVuFwqfYnOA9HY"
+    },
+    {
         title: "A Deep Dive into EIP-1271",
         excerpt: "Learn about the vulnerabilities in EIP-1271, including signature replay attacks, and how to mitigate them effectively.",
         link: "https://blog-aditya.vercel.app/blog/a-deep-dive-into-eip-1271",
@@ -36,12 +42,6 @@ const sampleBlogs = [
         link: "https://blog-aditya.vercel.app/blog/building-your-first-blockchain-in-python",
         image: "https://cdn.activestate.com/wp-content/uploads/2020/02/BuildaBlockchainWithPython.png"
     },
-    {
-        title: "Understanding CREATE, CREATE2, and CREATE3 in Solidity",
-        excerpt: "Explore the evolution of smart contract deployment with CREATE, CREATE2, and CREATE3.",
-        link: "https://blog-aditya.vercel.app/blog/understanding-create-create2-and-create3-in-solidity",
-        image: "https://miro.medium.com/v2/resize:fit:1200/1*0I2grrfGZJfw1pHvi6IX8g.png"
-    }
 ];
 
 export const Blog = () => {
