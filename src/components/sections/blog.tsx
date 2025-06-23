@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
@@ -77,6 +77,13 @@ export default function BlogSection() {
             </Card>
           ))}
         </div>
+        <div className="text-center mt-10">
+              <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-md transition-all hover:shadow-lg transform hover:scale-105">
+                <Link href="https://markdown-memoirs.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  View All Articles <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
       </div>
     </section>
   );
