@@ -14,7 +14,7 @@ const projects = [
       "Elevated user experience by 40% through a React-based interface for minting, buying, and selling NFTs.",
       "Employed IPFS for storage, improving data retrieval speed by 50% and ensuring asset availability."
     ],
-    image: "/nft-marketplace.gif",
+    image: "/nft-marketplace.png",
     tags: ['Solidity', 'Web3.js', 'React', 'IPFS', 'Hardhat'],
     liveUrl: "https://github.com/mishraji874/Timeless-NFT-Marketplace",
     githubUrl: "https://github.com/mishraji874/Timeless-NFT-Marketplace",
