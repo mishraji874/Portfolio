@@ -26,7 +26,7 @@ export default function HeroSection() {
                         </Link>
                     </Button>
                     <Button asChild variant="secondary" size="lg">
-                        <Link href="https://drive.google.com/file/d/1LR2_hJU4Wys9kkR1_DE6tYsqGmrFTKVl/view" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://drive.google.com/file/d/1miZYdpG--TRJsFbQRef7YuS6WWwvcQP_/view" target="_blank" rel="noopener noreferrer">
                             My Resume
                             <Download className="ml-2 h-5 w-5" />
                         </Link>

@@ -106,7 +106,7 @@ const achievementsData = [
         items: [
             {
                 title: "Codehawks Ranking",
-                description: "Currently ranked #80 as a security researcher and auditor",
+                description: "Currently ranked #22 as a security researcher and auditor",
                 icon: <Award className="w-5 h-5 text-accent flex-shrink-0" />
             }
         ]
@@ -175,10 +175,10 @@ export default function CertificationsSection() {
                             </Card>
                         </motion.div>
                     ))}
-                     {achievementsData.map((category, index) => (
+                    {achievementsData.map((category, index) => (
                         <motion.div
                             key={index}
-                             initial={{ opacity: 0, y: 50 }}
+                            initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.5, delay: (certificationsData.length + index) * 0.1 }}

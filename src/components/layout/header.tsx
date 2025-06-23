@@ -15,7 +15,7 @@ const navLinks = [
   { href: "#skills", label: "Skills" },
   { href: "#blog", label: "Blogs" },
   { href: "#certifications", label: "Certifications" },
-  { href: "https://drive.google.com/file/d/1LR2_hJU4Wys9kkR1_DE6tYsqGmrFTKVl/view", label: "Resume" },
+  { href: "https://drive.google.com/file/d/1miZYdpG--TRJsFbQRef7YuS6WWwvcQP_/view", label: "Resume" },
   { href: "#contact", label: "Contact" },
 ];
 
