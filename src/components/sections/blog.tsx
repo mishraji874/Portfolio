@@ -6,6 +6,12 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Unlocking Ethereum’s Potential: A Deep Dive into EIP-712",
+    description: "Explore Ethereum Improvement Proposal 712 (EIP-712), a standard that has revolutionized Ethereum’s approach to digital signatures and data handling, enhancing security and transparency.",
+    url: "https://markdown-memoirs.vercel.app/blogs/eip-712-deep-dive",
+    tags: ["Ethereum", "Web3", "EVM", "EIP", "Smart Contracts", "Digital Signatures", "NFTs"],
+  },
+  {
     title: "RPC Providers in Web3 and Blockchain",
     description: "Learn about RPC (Remote Procedure Call) providers, the crucial bridge between decentralized applications (dApps) and blockchain networks, facilitating seamless interaction with on-chain data and smart contracts.",
     url: "https://markdown-memoirs.vercel.app/blogs/rpc-providers-web3-blockchain",
@@ -34,12 +40,6 @@ const blogPosts = [
     description: "Learn how to efficiently use Solana's getProgramAccounts RPC method with filters and data slicing using TypeScript and web3.js.",
     url: "https://markdown-memoirs.vercel.app/blogs/solana-getprogramaccounts-typescript",
     tags: ["Solana", "Web3", "TypeScript", "RPC", "Blockchain"],
-  },
-  {
-    title: "Safeguarding Solidity's ecrecover Against Signature Malleability",
-    description: "NUnderstand how to protect Ethereum smart contracts from signature malleability by leveraging OpenZeppelin's ECDSA library with Solidity.",
-    url: "https://markdown-memoirs.vercel.app/blogs/solidity-ecrecover-signature-malleability",
-    tags: ["Solidity", "Security", "ECDSA", "ecrecover", "OpenZeppelin"],
   },
 ];
 
