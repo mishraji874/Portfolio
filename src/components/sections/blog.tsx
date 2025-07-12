@@ -6,6 +6,21 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Unlocking Vaults: A Deep Dive into the ERC-4626 Token Standard",
+    description:
+      "Explore ERC-4626, a standardized protocol that streamlines the operation and integration of tokenized vaults, enhancing DeFi efficiency and user experience.",
+    url: "https://markdown-memoirs.vercel.app/blogs/erc-4626-vault-tokenization",
+    tags: [
+      "DeFi",
+      "Blockchain",
+      "ERC-4626",
+      "Tokenized Vaults",
+      "Smart Contracts",
+      "Ethereum",
+      "Web3",
+    ],
+  },
+  {
     title:
       "Avalanche Blockchain: Scaling Web3 with Subnets and Super-Fast dApps",
     description:
@@ -65,21 +80,6 @@ const blogPosts = [
       "Discover EIP-7528, a proposed Ethereum standard that aims to unify the handling of native ETH with ERC-20 tokens using a pseudo-address, streamlining development and improving gas efficiency.",
     url: "https://markdown-memoirs.vercel.app/blogs/eip-7528-eth-standardization",
     tags: ["Ethereum", "EIP", "EVM", "ETH", "ERC-20", "Web3", "Blockchain"],
-  },
-  {
-    title:
-      "Understanding Flash Loan Attacks: A Deep Dive into DeFi Vulnerabilities",
-    description:
-      "Explore the mechanics of flash loan attacks in DeFi, how they exploit governance systems, and crucial mitigation strategies, with insights from the 'Selfie' challenge.",
-    url: "https://markdown-memoirs.vercel.app/blogs/flash-loan-attacks",
-    tags: [
-      "DeFi",
-      "Flash Loans",
-      "Security",
-      "Blockchain",
-      "DAO",
-      "Governance",
-    ],
   },
 ];
 
