@@ -6,6 +6,20 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title:
+      "Unlocking Web3 Security Careers: Why Cairo & Starknet Are Your Next Frontier",
+    description:
+      "Discover why mastering Cairo and Starknet is a strategic move for Web3 security researchers and Web2 cybersecurity professionals looking for high-demand opportunities.",
+    url: "https://markdown-memoirs.vercel.app/blogs/cairo-starknet-security-career",
+    tags: [
+      "Cairo",
+      "Cairo Lang",
+      "Starknet",
+      "Starknet Ecosystem",
+      "Smart Contract Security",
+    ],
+  },
+  {
     title: "Unlocking Vaults: A Deep Dive into the ERC-4626 Token Standard",
     description:
       "Explore ERC-4626, a standardized protocol that streamlines the operation and integration of tokenized vaults, enhancing DeFi efficiency and user experience.",
@@ -72,14 +86,6 @@ const blogPosts = [
       "Security",
       "Web3",
     ],
-  },
-  {
-    title:
-      "EIP-7528: Standardizing ETH Handling in EVM for Enhanced Interoperability",
-    description:
-      "Discover EIP-7528, a proposed Ethereum standard that aims to unify the handling of native ETH with ERC-20 tokens using a pseudo-address, streamlining development and improving gas efficiency.",
-    url: "https://markdown-memoirs.vercel.app/blogs/eip-7528-eth-standardization",
-    tags: ["Ethereum", "EIP", "EVM", "ETH", "ERC-20", "Web3", "Blockchain"],
   },
 ];
 
