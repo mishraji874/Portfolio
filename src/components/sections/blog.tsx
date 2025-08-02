@@ -7,6 +7,23 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 const blogPosts = [
   {
     title:
+      "The Zero-Knowledge Revolution: Scaling Ethereum with ZK Proofs and Starknet",
+    description:
+      "Explore how Zero-Knowledge Proofs (ZKPs) are fundamentally reshaping blockchain scalability and privacy, with a focus on Starknet's innovative use of this technology to scale Ethereum.",
+    url: "https://markdown-memoirs.vercel.app/blogs/zk-proofs-starknet-ethereum-scaling",
+    tags: [
+      "ZK Proofs",
+      "Starknet",
+      "Ethereum Scaling",
+      "Blockchain",
+      "Privacy",
+      "Zero-Knowledge",
+      "Cairo",
+      "Web3",
+    ],
+  },
+  {
+    title:
       "DeFi's Evolution: Beyond Buzzwords to a Parallel Financial Revolution",
     description:
       "Explore how Decentralized Finance (DeFi) has evolved from an experiment to a robust, borderless financial system, attracting traditional finance and addressing key challenges.",
@@ -81,13 +98,6 @@ const blogPosts = [
       "Digital Signatures",
       "NFTs",
     ],
-  },
-  {
-    title: "RPC Providers in Web3 and Blockchain",
-    description:
-      "Learn about RPC (Remote Procedure Call) providers, the crucial bridge between decentralized applications (dApps) and blockchain networks, facilitating seamless interaction with on-chain data and smart contracts.",
-    url: "https://markdown-memoirs.vercel.app/blogs/rpc-providers-web3-blockchain",
-    tags: ["Web3", "Blockchain", "RPC", "dApps", "JSON-RPC"],
   },
 ];
 
