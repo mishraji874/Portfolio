@@ -6,6 +6,21 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Understanding Pay to Script Hash (P2SH) in Bitcoin",
+    description:
+      "Learn about Pay to Script Hash (P2SH), a Bitcoin transaction type that enables complex, multi-party transactions while simplifying the address format for the sender.",
+    url: "https://markdown-memoirs.vercel.app/blogs/pay-to-script-hash-p2sh-bitcoin",
+    tags: [
+      "Bitcoin",
+      "P2SH",
+      "Blockchain",
+      "Smart Contracts",
+      "Multisig",
+      "Cryptography",
+      "BIP16",
+    ],
+  },
+  {
     title:
       "The Zero-Knowledge Revolution: Scaling Ethereum with ZK Proofs and Starknet",
     description:
@@ -82,21 +97,6 @@ const blogPosts = [
       "Subnets",
       "EVM",
       "Web3",
-    ],
-  },
-  {
-    title: "Unlocking Ethereum’s Potential: A Deep Dive into EIP-712",
-    description:
-      "Explore Ethereum Improvement Proposal 712 (EIP-712), a standard that has revolutionized Ethereum’s approach to digital signatures and data handling, enhancing security and transparency.",
-    url: "https://markdown-memoirs.vercel.app/blogs/eip-712-deep-dive",
-    tags: [
-      "Ethereum",
-      "Web3",
-      "EVM",
-      "EIP",
-      "Smart Contracts",
-      "Digital Signatures",
-      "NFTs",
     ],
   },
 ];
