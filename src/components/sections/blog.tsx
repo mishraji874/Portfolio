@@ -6,6 +6,21 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "The Core Concepts of React: A Comprehensive Guide for Beginners",
+    description:
+      "A simple guide to the fundamental terminology of React, from components and JSX to state management, hooks, and advanced rendering concepts.",
+    url: "https://markdown-memoirs.vercel.app/blogs/react-core-concepts-guide",
+    tags: [
+      "React",
+      "JavaScript",
+      "Web Development",
+      "Frontend",
+      "React Hooks",
+      "Components",
+      "State Management",
+    ],
+  },
+  {
     title: "Understanding Pay to Script Hash (P2SH) in Bitcoin",
     description:
       "Learn about Pay to Script Hash (P2SH), a Bitcoin transaction type that enables complex, multi-party transactions while simplifying the address format for the sender.",
@@ -80,22 +95,6 @@ const blogPosts = [
       "Tokenized Vaults",
       "Smart Contracts",
       "Ethereum",
-      "Web3",
-    ],
-  },
-  {
-    title:
-      "Avalanche Blockchain: Scaling Web3 with Subnets and Super-Fast dApps",
-    description:
-      "Explore Avalanche, a high-performance Layer 1 blockchain offering near-instant finality, modularity, and the ability to create custom blockchains or subnets, ideal for modern dApps.",
-    url: "https://markdown-memoirs.vercel.app/blogs/avalance-blockchain",
-    tags: [
-      "Avalanche",
-      "Blockchain",
-      "dApps",
-      "Scalability",
-      "Subnets",
-      "EVM",
       "Web3",
     ],
   },
