@@ -6,6 +6,20 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Localhost vs. 127.0.0.1: Demystifying Your Local Network",
+    description:
+      "A simple guide for developers to understand the difference between localhost and 127.0.0.1 and how they work within the local network, covering IP addresses, DNS, and more.",
+    url: "https://markdown-memoirs.vercel.app/blogs/localhost-127-0-0-1-demystifying-your-local-network",
+    tags: [
+      "localhost",
+      "127.0.0.1",
+      "Networking",
+      "DNS",
+      "IP Address",
+      "Web Development",
+    ],
+  },
+  {
     title: "The Core Concepts of React: A Comprehensive Guide for Beginners",
     description:
       "A simple guide to the fundamental terminology of React, from components and JSX to state management, hooks, and advanced rendering concepts.",
@@ -81,21 +95,6 @@ const blogPosts = [
       "Starknet",
       "Starknet Ecosystem",
       "Smart Contract Security",
-    ],
-  },
-  {
-    title: "Unlocking Vaults: A Deep Dive into the ERC-4626 Token Standard",
-    description:
-      "Explore ERC-4626, a standardized protocol that streamlines the operation and integration of tokenized vaults, enhancing DeFi efficiency and user experience.",
-    url: "https://markdown-memoirs.vercel.app/blogs/erc-4626-vault-tokenization",
-    tags: [
-      "DeFi",
-      "Blockchain",
-      "ERC-4626",
-      "Tokenized Vaults",
-      "Smart Contracts",
-      "Ethereum",
-      "Web3",
     ],
   },
 ];
