@@ -6,6 +6,22 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Understanding Ethereum Layer 2s and the Optimism Ecosystem",
+    description:
+      "A comprehensive guide to Ethereum's scaling solutions, focusing on Layer-2s, the Optimism network, the OP Stack, and its vision for a unified Superchain.",
+    url: "https://markdown-memoirs.vercel.app/blogs/ethereum-layer-2s-optimis-guide",
+    tags: [
+      "Ethereum",
+      "Layer 2",
+      "Optimism",
+      "Scaling",
+      "Blockchain",
+      "L2",
+      "Rollups",
+      "OP Stack",
+    ],
+  },
+  {
     title: "Localhost vs. 127.0.0.1: Demystifying Your Local Network",
     description:
       "A simple guide for developers to understand the difference between localhost and 127.0.0.1 and how they work within the local network, covering IP addresses, DNS, and more.",
@@ -81,20 +97,6 @@ const blogPosts = [
       "Web3",
       "Sustainable DeFi",
       "RWA",
-    ],
-  },
-  {
-    title:
-      "Unlocking Web3 Security Careers: Why Cairo & Starknet Are Your Next Frontier",
-    description:
-      "Discover why mastering Cairo and Starknet is a strategic move for Web3 security researchers and Web2 cybersecurity professionals looking for high-demand opportunities.",
-    url: "https://markdown-memoirs.vercel.app/blogs/cairo-starknet-security-career",
-    tags: [
-      "Cairo",
-      "Cairo Lang",
-      "Starknet",
-      "Starknet Ecosystem",
-      "Smart Contract Security",
     ],
   },
 ];
