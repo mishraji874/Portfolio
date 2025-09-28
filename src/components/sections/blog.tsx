@@ -6,6 +6,21 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "20 Game-Changing CSS Features You Need to Master Now",
+    description:
+      "A rapid-fire guide to 20 revolutionary CSS features released in the last few years, including Container Queries, Nesting, @layer, and more, that fundamentally change how we write styles.",
+    url: "https://markdown-memoirs.vercel.app/blogs/20-modern-css-features",
+    tags: [
+      "CSS",
+      "CSS3",
+      "Web Development",
+      "Frontend",
+      "Container Queries",
+      "Nesting",
+      "Modern CSS",
+    ],
+  },
+  {
     title: "Understanding Ethereum Layer 2s and the Optimism Ecosystem",
     description:
       "A comprehensive guide to Ethereum's scaling solutions, focusing on Layer-2s, the Optimism network, the OP Stack, and its vision for a unified Superchain.",
@@ -80,23 +95,6 @@ const blogPosts = [
       "Zero-Knowledge",
       "Cairo",
       "Web3",
-    ],
-  },
-  {
-    title:
-      "DeFi's Evolution: Beyond Buzzwords to a Parallel Financial Revolution",
-    description:
-      "Explore how Decentralized Finance (DeFi) has evolved from an experiment to a robust, borderless financial system, attracting traditional finance and addressing key challenges.",
-    url: "https://markdown-memoirs.vercel.app/blogs/defi-parallel-financial-system",
-    tags: [
-      "DeFi",
-      "Decentralized Finance",
-      "Blockchain",
-      "Fintech",
-      "Smart Contracts",
-      "Web3",
-      "Sustainable DeFi",
-      "RWA",
     ],
   },
 ];
