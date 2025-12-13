@@ -6,6 +6,20 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Beyond `git add`: 10 Senior Habits to Master Git as a Superpower",
+    description:
+      "Git is more than just a backup tool. Learn the 10 critical habits and mindsets that distinguish a productive senior engineer from someone just memorizing commands, focusing on clarity, history, and collaboration.",
+    url: "https://markdown-memoirs.vercel.app/blogs/master-git-senior-engineer-habits",
+    tags: [
+      "Git",
+      "Version Control",
+      "Engineering Practices",
+      "Productivity",
+      "Software Development",
+      "Senior Engineer",
+    ],
+  },
+  {
     title: "20 Game-Changing CSS Features You Need to Master Now",
     description:
       "A rapid-fire guide to 20 revolutionary CSS features released in the last few years, including Container Queries, Nesting, @layer, and more, that fundamentally change how we write styles.",
@@ -78,23 +92,6 @@ const blogPosts = [
       "Multisig",
       "Cryptography",
       "BIP16",
-    ],
-  },
-  {
-    title:
-      "The Zero-Knowledge Revolution: Scaling Ethereum with ZK Proofs and Starknet",
-    description:
-      "Explore how Zero-Knowledge Proofs (ZKPs) are fundamentally reshaping blockchain scalability and privacy, with a focus on Starknet's innovative use of this technology to scale Ethereum.",
-    url: "https://markdown-memoirs.vercel.app/blogs/zk-proofs-starknet-ethereum-scaling",
-    tags: [
-      "ZK Proofs",
-      "Starknet",
-      "Ethereum Scaling",
-      "Blockchain",
-      "Privacy",
-      "Zero-Knowledge",
-      "Cairo",
-      "Web3",
     ],
   },
 ];
