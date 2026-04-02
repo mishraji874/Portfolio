@@ -6,6 +6,21 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    title:
+      "The Speed Trap: Does Parallel Execution Actually Solve Ethereum’s Scaling Problem?",
+    description:
+      "An analysis of parallel transaction execution, exploring how newer EVM-compatible chains like Monad and Sei aim to outperform Ethereum's sequential processing.",
+    url: "https://markdown-memoirs.vercel.app/blogs/parallel-execution-ethereum-scaling",
+    tags: [
+      "Ethereum",
+      "EVM",
+      "Parallel Execution",
+      "Blockchain Scaling",
+      "Monad",
+      "Sei",
+    ],
+  },
+  {
     title: "Beyond `git add`: 10 Senior Habits to Master Git as a Superpower",
     description:
       "Git is more than just a backup tool. Learn the 10 critical habits and mindsets that distinguish a productive senior engineer from someone just memorizing commands, focusing on clarity, history, and collaboration.",
@@ -77,21 +92,6 @@ const blogPosts = [
       "React Hooks",
       "Components",
       "State Management",
-    ],
-  },
-  {
-    title: "Understanding Pay to Script Hash (P2SH) in Bitcoin",
-    description:
-      "Learn about Pay to Script Hash (P2SH), a Bitcoin transaction type that enables complex, multi-party transactions while simplifying the address format for the sender.",
-    url: "https://markdown-memoirs.vercel.app/blogs/pay-to-script-hash-p2sh-bitcoin",
-    tags: [
-      "Bitcoin",
-      "P2SH",
-      "Blockchain",
-      "Smart Contracts",
-      "Multisig",
-      "Cryptography",
-      "BIP16",
     ],
   },
 ];
